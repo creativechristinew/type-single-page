@@ -7,6 +7,9 @@
     font-weight: normal;
     }
     
+   *{
+    border: blue dashed;
+   }
     body{
     background-color: #ffffff;
     font-family: 'Recursive';
@@ -41,6 +44,15 @@ grid-area: v;
 grid-area: a;
 }
 }
+p{
+    font-size: 18px;
+    font-variation-settings: "MONO" 0, "CASL" .5, "wght" 400, "slnt" 0, "CRSV" 0;
+}
+
+.alphabet{
+    font-size: 55px;
+}
+
 /* CSS for the footer */
 footer{
     background-color: #808080;
@@ -52,6 +64,9 @@ h3{
     text-align: center;
     font-size: 5em;
     animation: weightChange 7s infinite;
+}
+h1{
+    font-size: ;
 }
 
 @keyframes weightChange {
