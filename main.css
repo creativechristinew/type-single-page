@@ -24,23 +24,25 @@
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
-grid-gap: 25px;
+grid-gap: 2px;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
+grid-template-rows: auto auto auto ;
 grid-template-areas: 
-    "h v"
+    "h h"
+    "h h"
+    "v v"
     "a a";
 }
 
-.history {
+#history {
 grid-area: h;
 }
 
-.variations{
+#variations{
 grid-area: v;
 }
 
-.alphabet {
+#alphabet {
 grid-area: a;
 }
 }
@@ -49,7 +51,7 @@ p{
     font-variation-settings: "MONO" 0, "CASL" .5, "wght" 400, "slnt" 0, "CRSV" 0;
 }
 
-.alphabet{
+#alphabet{
     font-size: 55px;
 }
 
@@ -67,7 +69,7 @@ h3{
 }
 
     
-}
+
 
 @keyframes weightChange {
     0%, 100%{
