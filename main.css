@@ -46,6 +46,7 @@ grid-area: v;
 }
 
 #alphabet {
+background-color: #E1F8EB;
 margin: 30px;
 grid-area: a;
 display:grid;
