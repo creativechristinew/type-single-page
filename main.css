@@ -16,7 +16,7 @@
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
-    width: min(100% - 3rem, 80ch);
+    width: min(100% - 3rem, ch);
     margin-inline: auto;
 }
 /* how the page wrapper appears on desktop */
@@ -25,9 +25,10 @@
 .page-wrapper{
 display: grid;
 grid-gap: 2px;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 2fr 2fr;
 grid-template-rows: auto auto auto ;
 grid-template-areas: 
+    "h h"
     "h h"
     "h h"
     "v v"
@@ -36,6 +37,8 @@ grid-template-areas:
 
 #history {
 grid-area: h;
+margin:30px;
+font-size: 18px;
 }
 
 #variations{
@@ -44,11 +47,23 @@ grid-area: v;
 
 #alphabet {
 grid-area: a;
+display:grid;
+grid-template-columns: 3fr 3fr;
+grid-template-rows: auto;
+grid-template-areas:
+"f . b" ;
+full-character-list{
+    grid-area: f;
+}
+.alphabet-text{
+    grid-area: b;
+    text-align: right;
 }
 }
-p{
-    font-size: 18px;
-    font-variation-settings: "MONO" 0, "CASL" .5, "wght" 400, "slnt" 0, "CRSV" 0;
+
+}
+h1{
+    font-size: ;
 }
 
 #alphabet{
