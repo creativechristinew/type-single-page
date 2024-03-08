@@ -32,7 +32,8 @@ grid-template-areas:
     "h h"
     "h h"
     "v v"
-    "a a";
+    "a a"
+    "n n";
 }
 
 #history {
@@ -58,8 +59,7 @@ grid-area: v;
     grid-template-columns: 4fr 4fr 4fr 4fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "f f b b" 
-    "t t n n";
+    "f f b b";
     .full-character-list{
         font-size: 87px;
         grid-area: f;
@@ -74,18 +74,20 @@ grid-area: v;
         font-size: 50px;
         color: #4C5BA9;
         font-variation-settings: "MONO" 0, "CASL" 1, "wght" 450, "slnt" 0, "CRSV" 0;
-        .number-title{
-            grid-area: t;
-            font-size: 40px;
-        }
-        .number{
-            grid-area: n;
-            font-size: 87px;
-            margin: 40px;
-        }
-      
-
+    }
 }   
+#number{
+    background-color: #E1F8EB;
+    margin: 30px;
+    grid-area: n;
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+
+    
+
+}
 }
 
 
