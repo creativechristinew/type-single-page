@@ -16,7 +16,7 @@
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
-    width: min(100% - 3rem, ch);
+    width: min(100% - 8rem, 150ch);
     margin-inline: auto;
 }
 /* how the page wrapper appears on desktop */
@@ -39,6 +39,11 @@ grid-template-areas:
 grid-area: h;
 margin:70px;
 font-size: 18px;
+background-color: #E1F8EB;
+color: #4C5BA9;
+padding: 30px;
+border: #9DAAEE solid;
+border-width: 60px;
 }
 
 #variations{
@@ -53,29 +58,34 @@ display:grid;
 grid-template-columns: 4fr 4fr 4fr 4fr;
 grid-template-rows: auto;
 grid-template-areas:
-"f f b b" ;
+"f f b b" 
+"t t n n";
 .full-character-list{
-    font-size: 55px;
+    font-size: 87px;
     grid-area: f;
     margin: 40px;
-    
+    color: #4C5BA9;
+    font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
 }
 .alphabet-text{
     grid-area: b;
     text-align: right;
-    font-size: 48px;
-    margin: 40px
-
+    margin: 40px;
+    font-size: 50px;
+    color: #4C5BA9;
+    font-variation-settings: "MONO" 0, "CASL" 1, "wght" 450, "slnt" 0, "CRSV" 0;
+    
+   
+}
+.number{
+    grid-area: n;
+}
+.number-title{
+    grid-area: t;
 }
 }
 
 }
-h1{
-    ;
-}
-
-
-
 
 /* CSS for the footer */
 footer{
