@@ -50,42 +50,48 @@ border-width: 60px;
 grid-area: v;
 }
 
-#alphabet {
-background-color: #E1F8EB;
-margin: 30px;
-grid-area: a;
-display:grid;
-grid-template-columns: 4fr 4fr 4fr 4fr;
-grid-template-rows: auto;
-grid-template-areas:
-"f f b b" 
-"t t n n";
-.full-character-list{
-    font-size: 87px;
-    grid-area: f;
-    margin: 40px;
-    color: #4C5BA9;
-    font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
-}
-.alphabet-text{
-    grid-area: b;
-    text-align: right;
-    margin: 40px;
-    font-size: 50px;
-    color: #4C5BA9;
-    font-variation-settings: "MONO" 0, "CASL" 1, "wght" 450, "slnt" 0, "CRSV" 0;
-    
-   
-}
-.number{
-    grid-area: n;
-}
-.number-title{
-    grid-area: t;
-}
+#alphabet{
+    background-color: #E1F8EB;
+    margin: 30px;
+    grid-area: a;
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "f f b b" 
+    "t t n n";
+    .full-character-list{
+        font-size: 87px;
+        grid-area: f;
+        margin: 40px;
+        color: #4C5BA9;
+        font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
+    }
+    .alphabet-text{
+        grid-area: b;
+        text-align: right;
+        margin: 40px;
+        font-size: 50px;
+        color: #4C5BA9;
+        font-variation-settings: "MONO" 0, "CASL" 1, "wght" 450, "slnt" 0, "CRSV" 0;
+        .number-title{
+            grid-area: t;
+            font-size: 40px;
+        }
+        .number{
+            grid-area: n;
+            font-size: 87px;
+            margin: 40px;
+        }
+      
+
+}   
 }
 
-}
+
+
+
+
 
 /* CSS for the footer */
 footer{
@@ -139,4 +145,3 @@ h3{
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
-
