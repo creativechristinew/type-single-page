@@ -54,7 +54,25 @@ border-width: 60px;
 }
 
 #variations{
+    background-color: #4C5BA9;
+    display: grid;
+grid-gap: 2px;
+grid-template-columns: 2fr 2fr;
+grid-template-rows: auto auto auto ;
 grid-area: v;
+grid-template-areas: 
+v o;
+.download{
+    grid-area: o;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-bottom: 70px;
+    font-size: 30px;
+    padding: 40px;
+    color: #4C5BA9;
+    background-color: #E1F8EB;
+}
 }
 
 #alphabet{
@@ -84,7 +102,7 @@ grid-area: v;
 }   
 #number{
     background-color: #E1F8EB;
-    margin: 30px;
+   margin: 30px;
     grid-area: n;
     display:grid;
     grid-template-columns: 4fr 4fr 4fr 4fr;
@@ -100,6 +118,7 @@ grid-area: v;
         color: #4C5BA9;
         font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
         
+        
 }
     .numbers{
          grid-area: l;
@@ -110,9 +129,10 @@ grid-area: v;
          font-variation-settings: "MONO" 0, "CASL" 1, "wght" 450, "slnt" 0, "CRSV" 0;
 }
 
+}    
 }
 
-}
+
 
 
 
@@ -121,7 +141,7 @@ grid-area: v;
 
 /* CSS for the footer */
 footer{
-    background-color: #808080;
+    background-color: #4C5BA9;
 }
 
 /* variable font animation */
