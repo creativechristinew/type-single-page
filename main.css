@@ -67,16 +67,9 @@ grid-template-rows: auto auto auto ;
 grid-area: v;
 grid-template-areas: 
 v o;
-.download{
+.download:inset-block {
     grid-area: o;
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 200px;
-    margin-bottom: 70px;
-    font-size: 30px;
-    padding: 40px;
-    color: #4C5BA9;
-    background-color: #E1F8EB;
+    
 }
 }
 
@@ -90,7 +83,7 @@ v o;
     grid-template-areas:
     "f f b b";
     .full-character-list{
-        font-size: 87px;
+        font-size: 65px;
         grid-area: f;
         margin: 40px;
         color: #4C5BA9;
@@ -100,7 +93,7 @@ v o;
         grid-area: b;
         text-align: right;
         margin: 40px;
-        font-size: 50px;
+        font-size: 40px;
         color: #4C5BA9;
         font-variation-settings: "MONO" 0, "CASL" 1, "wght" 450, "slnt" 0, "CRSV" 0;
     }
@@ -116,26 +109,25 @@ v o;
     "r r l l"
     "r r l l";
 
-    .numbers-title{
-        grid-area: r;
-        margin: 40px;
-        font-size: 87px;
-        color: #4C5BA9;
-        font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
-        
-        
-}
-    .numbers{
-         grid-area: l;
-        text-align: right;
-         margin: 40px;
-         font-size: 50px;
-         color: #4C5BA9;
-         font-variation-settings: "MONO" 0, "CASL" 1, "wght" 450, "slnt" 0, "CRSV" 0;
-}
+    .number-list{
+        font-size: 40px;
+    }
 
-}    
+    .numbers{
+        grid-area: l;
+       text-align: right;
+        margin: 40px;
+        font-size: 50px;
+        color: #4C5BA9;
+        font-variation-settings: "MONO" 0, "CASL" 1, "wght" 450, "slnt" 0, "CRSV" 0;    
+        
+        
 }
+  
+}
+}
+   
+
 
 
 
