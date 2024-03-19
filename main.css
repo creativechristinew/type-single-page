@@ -51,6 +51,11 @@ color: #4C5BA9;
 padding: 30px;
 border: #9DAAEE solid;
 border-width: 60px;
+
+.first-word-history{
+    font-size: 40px;
+    font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
 }
 
 #variations{
