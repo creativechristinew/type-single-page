@@ -39,8 +39,11 @@ grid-template-areas:
 .hero{
    background-color: #E1F8EB;
    padding: 200px;
-   
+  #hero-text{
+    fill: #4C5BA9;
 }
+}
+
 
 #history {
 grid-area: h;
@@ -59,6 +62,7 @@ border-width: 60px;
 }
 
 #variations{
+    padding: 100px;
     background-color: #4C5BA9;
     display: grid;
 grid-gap: 2px;
@@ -66,11 +70,26 @@ grid-template-columns: 2fr 2fr;
 grid-template-rows: auto auto auto ;
 grid-area: v;
 grid-template-areas: 
-v o;
-.download:inset-block {
-    grid-area: o;
-    
+"v o";
 }
+.download{
+    align-self: center;
+    display: inline-block;
+        margin: auto;
+        text-decoration: none;
+        text-align: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 20px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
+    grid-area: o;
+    background-color: #E1F8EB;
+}
+.download:hover{
+    background-color: #a7ccb7;
 }
 
 #alphabet{
@@ -109,8 +128,11 @@ v o;
     "r r l l"
     "r r l l";
 
-    .number-list{
+    .number-title{
         font-size: 40px;
+        margin: 40px;
+        font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
+        color: #4C5BA9;
     }
 
     .numbers{
