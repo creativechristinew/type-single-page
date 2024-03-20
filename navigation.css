@@ -26,7 +26,7 @@
       padding-top:10px;
       top: 100%;
       left: 0;
-      background: gray;
+     background: #4C5BA9;
       width: 100%;
       transform: scale(1,0);
       transform-origin: top;
@@ -81,7 +81,7 @@
   
           display: block;
           /* color of the hamburger menu */
-          background: black;
+          background: #E1F8EB;
           /* how far the hamburger menu is from the top */
           margin-top:7px;
           height: 3px;
