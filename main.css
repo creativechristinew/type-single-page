@@ -7,7 +7,7 @@
     font-weight: normal;
     }
     
-   */{
+   *{
     border: blue dashed;
    }
     body{
@@ -50,9 +50,26 @@ grid-template-areas:
             font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
         }
 .hero{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+
      background-color: #E1F8EB;
        #hero-text{
          fill: #4C5BA9;
+         grid-area: u;
+     }
+     #hero-top-design{
+        fill: #6E81E4;
+        height: 300px;
+        grid-area: m;
+     }
+     #history-bottom-design{
+        fill: #6E81E4;
+        height: 300px;
+        grid-area: ;
+        
      }
      #history {
 grid-area: h;
@@ -60,7 +77,7 @@ margin:70px;
 font-size: 15px;
 background-color: #E1F8EB;
 color: #4C5BA9;
-padding: 30px;
+padding: 20px;
 border: #9DAAEE solid;
 border-width: 60px;
 
@@ -151,11 +168,36 @@ grid-template-areas:
     font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
 }
 .hero{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "m . . ."
+        "m . . ."
+        "m a a ."
+        ". a a z"
+        ". . . z";
+        
    background-color: #E1F8EB;
    padding: 100px;
   #hero-text{
     fill: #4C5BA9;
+    grid-area: a;
+    height: 300px;
+    margin: -40px;
+    align-self: center;
 }
+#hero-top-design{
+    fill: #6E81E4;
+    height: 300px;
+    grid-area: m;
+ }
+ #history-bottom-design{
+    fill: #6E81E4;
+    height: 300px;
+    grid-area: z;
+    
+ }
 }
 
 
