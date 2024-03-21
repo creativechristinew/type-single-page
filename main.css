@@ -16,7 +16,7 @@
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
-    width: min(100% - 8rem, 150ch);
+    width: min(100% - rem, 150ch);
     margin-inline: auto;
     display: grid;
 grid-gap: 2px;
@@ -33,7 +33,7 @@ grid-template-areas:
     #history {
         grid-area: h;
         margin: 5px;
-        font-size: 12px;
+        font-size: 10px;
         background-color: #E1F8EB;
         color: #4C5BA9;
         padding: 20px;
@@ -54,32 +54,37 @@ grid-template-areas:
     grid-template-columns: 4fr 4fr 4fr 4fr;
         grid-template-rows: auto;
         grid-template-areas:
-
-     background-color: #E1F8EB;
+        "m . . ."
+        "m . . ."
+        "m a a ."
+        ". a a z"
+        ". . . z";
+     background-color:#E1F8EB;
        #hero-text{
          fill: #4C5BA9;
-         grid-area: u;
+         grid-area: a;
      }
      #hero-top-design{
         fill: #6E81E4;
-        height: 300px;
+        height: 100px;
         grid-area: m;
      }
      #history-bottom-design{
         fill: #6E81E4;
-        height: 300px;
-        grid-area: ;
+        height: 100px;
+        grid-area:z ;
         
      }
+    }
      #history {
 grid-area: h;
-margin:70px;
-font-size: 15px;
+margin:17px;
+font-size: 12px;
 background-color: #E1F8EB;
 color: #4C5BA9;
-padding: 20px;
+padding: 10px;
 border: #9DAAEE solid;
-border-width: 60px;
+border-width: 30px;
 
 
 
@@ -88,7 +93,7 @@ border-width: 60px;
     font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
 }
 }
-     }
+ 
      #alphabet{
         background-color: #E1F8EB;
         margin: 15px;
@@ -143,9 +148,42 @@ border-width: 60px;
             font-size: 20px;
             color: #4C5BA9;
             font-variation-settings: "MONO" 0, "CASL" 1, "wght" 450, "slnt" 0, "CRSV" 0;    
+           
             
-        }   
+            
+        }  
+     
     }
+    #glyph{
+        margin: 10px;
+        background-color: #E1F8EB;
+        grid-area: g; 
+        display:grid;
+            grid-template-columns: 4fr 4fr 4fr 4fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "t t . ."
+            "t t p p"
+            "t t . .";
+           
+            .glyphs{
+                text-align: right;
+                grid-area: p;
+                margin: 10px;
+                font-size: 20px;
+                font-variation-settings: "MONO" 0, "CASL" 1, "wght" 450, "slnt" 0, "CRSV" 0;  
+                color: #4C5BA9;  
+            }
+           
+            .glyph-title{
+                grid-area: t;
+                margin: 10px;
+                font-size: 25px;
+                font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
+                color: #4C5BA9;
+        
+            }
+        }
 /* how the page wrapper appears on desktop */
 
 @media only screen and (min-width:800px){
@@ -211,6 +249,7 @@ color: #4C5BA9;
 padding: 30px;
 border: #9DAAEE solid;
 border-width: 60px;
+font-variation-settings: "MONO" 0, "CASL" 0.5, "wght" 450, "slnt" 0, "CRSV" 0;
 
 .first-word-history{
     font-size: 35px;
@@ -227,8 +266,19 @@ grid-template-columns: 2fr 2fr;
 grid-template-rows: auto auto auto ;
 grid-area: v;
 grid-template-areas: 
-"v o";
+"x o";
 }
+.five{
+    grid-area: x;
+    .title{
+        font-size: 35px;
+    }
+        .weight{
+            
+        }
+}
+
+
 .download{
     align-self: center;
     display: inline-block;
@@ -343,21 +393,16 @@ display:grid;
    
 
 
-
-
-
-
-
-
-
 /* CSS for the footer */
 footer{
     background-color: #4C5BA9;
+    color: #E1F8EB;
 }
+
 
 /* variable font animation */
 h3{
-    font-weight:20; 
+    color: #E1F8EB;
     text-align: center;
     font-size: 5em;
     animation: weightChange 7s infinite;
