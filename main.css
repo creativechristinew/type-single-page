@@ -58,7 +58,7 @@ grid-template-areas:
      
         
      }
-    }
+    
      #history {
 grid-area: h;
 margin:17px;
