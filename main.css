@@ -50,29 +50,12 @@ grid-template-areas:
             font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
         }
 .hero{
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr 4fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "m . . ."
-        "m . . ."
-        "m a a ."
-        ". a a z"
-        ". . . z";
+    fill: #4C5BA9;
      background-color:#E1F8EB;
-       #hero-text{
-         fill: #4C5BA9;
-         grid-area: a;
-     }
-     #hero-top-design{
-        fill: #6E81E4;
-        height: 100px;
-        grid-area: m;
-     }
-     #history-bottom-design{
-        fill: #6E81E4;
-        height: 100px;
-        grid-area:z ;
+    
+       
+     
+     
         
      }
     }
@@ -155,7 +138,7 @@ border-width: 30px;
      
     }
     #glyph{
-        margin: 10px;
+        margin: 15px;
         background-color: #E1F8EB;
         grid-area: g; 
         display:grid;
@@ -165,6 +148,7 @@ border-width: 30px;
             "t t . ."
             "t t p p"
             "t t . .";
+            
            
             .glyphs{
                 text-align: right;
@@ -183,7 +167,114 @@ border-width: 30px;
                 color: #4C5BA9;
         
             }
+            
         }
+        #variations{
+            padding: 25px;
+            background-color: #4C5BA9;
+            display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto auto auto ;
+        grid-area: v;
+        grid-template-areas: 
+        "x o";
+        }
+        .five{
+            grid-area: x;
+            .title{
+                font-size: 25px;
+                color: #E1F8EB;
+            }
+                 
+                    
+                 .weight{
+                     animation: weightChange 4s infinite;
+                    color: #E1F8EB;
+                    font-size: 20px;
+                }
+                    @keyframes weightChange {
+                    
+                        0%, 100{
+                            font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0;
+                        }
+                       50%{
+                        font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0;
+                       } 
+                    }
+                } 
+                .slant{
+                    animation: slantChange 4s infinite;
+                    color: #E1F8EB;
+                    font-size: 20px;
+                }
+                    @keyframes slantChange {
+                        
+                            0%, 100%{
+                            font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0;
+                        }
+                            50%{
+                                font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 0;;
+                            }
+                    }
+                .monospace{
+                    animation: monospaceChange 4s infinite;
+                    color: #E1F8EB;
+                    font-size: 20px;
+                }
+                    @keyframes monospaceChange {
+                        0%, 100%{
+                            font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0;
+                        }
+                        50%{
+                            font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0;
+                        }
+                    }
+                .casual{
+                    animation: casualChange 4s infinite;
+                    font-size: 20px;
+                    color: #E1F8EB;
+                }
+                    @keyframes casualChange {
+                        0%, 100% {
+                            font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0;
+                        }
+                        50%{
+                            font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0;
+                        }
+                    }
+                .cursive{
+                    animation: cursiveChange 4s infinite;
+                    font-size: 20px;
+                    color: #E1F8EB;
+                }
+                    @keyframes cursiveChange {
+                        0%, 100% {
+                            font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0;
+                        }
+                        50%{
+                            font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 1;
+                        }
+                    }
+                    .download{
+                        align-self: center;
+                        display: inline-block;
+                            margin: auto;
+                            text-decoration: none;
+                            text-align: center;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            padding: 10px 10px;
+                            border-radius: 10px;
+                            font-size: 20px;
+                            font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
+                        grid-area: o;
+                        background-color: #E1F8EB;
+                    }
+                    .download:hover{
+                        background-color: #a7ccb7;
+                    }
 /* how the page wrapper appears on desktop */
 
 @media only screen and (min-width:800px){
@@ -206,36 +297,11 @@ grid-template-areas:
     font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
 }
 .hero{
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr 4fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "m . . ."
-        "m . . ."
-        "m a a ."
-        ". a a z"
-        ". . . z";
+    fill: #4C5BA9;
         
    background-color: #E1F8EB;
    padding: 100px;
-  #hero-text{
-    fill: #4C5BA9;
-    grid-area: a;
-    height: 300px;
-    margin: -40px;
-    align-self: center;
-}
-#hero-top-design{
-    fill: #6E81E4;
-    height: 300px;
-    grid-area: m;
- }
- #history-bottom-design{
-    fill: #6E81E4;
-    height: 300px;
-    grid-area: z;
-    
- }
+ 
 }
 
 
@@ -272,6 +338,7 @@ grid-template-areas:
     grid-area: x;
     .title{
         font-size: 35px;
+        color: #E1F8EB;
     }
          
             
