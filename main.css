@@ -269,10 +269,18 @@ border-width: 30px;
                             font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
                         grid-area: o;
                         background-color: #E1F8EB;
+                        
                     }
                     .download:hover{
                         background-color: #a7ccb7;
                     }
+                    .download:active{
+                        color: #9DAAEE;
+                    }
+                        
+            
+    
+                    
 /* how the page wrapper appears on desktop */
 
 @media only screen and (min-width:800px){
@@ -335,7 +343,7 @@ grid-template-areas:
 .five{
     grid-area: x;
     .title{
-        font-size: 35px;
+        font-size: 50px;
         color: #E1F8EB;
     }
          
@@ -343,7 +351,7 @@ grid-template-areas:
          .weight{
              animation: weightChange 4s infinite;
             color: #E1F8EB;
-            font-size: 24px;
+            font-size: 45px;
         }
             @keyframes weightChange {
             
@@ -358,7 +366,7 @@ grid-template-areas:
         .slant{
             animation: slantChange 4s infinite;
             color: #E1F8EB;
-            font-size: 24px;
+            font-size: 45px;
         }
             @keyframes slantChange {
                 
@@ -372,7 +380,7 @@ grid-template-areas:
         .monospace{
             animation: monospaceChange 4s infinite;
             color: #E1F8EB;
-            font-size: 24px;
+            font-size: 45px;
         }
             @keyframes monospaceChange {
                 0%, 100%{
@@ -384,7 +392,7 @@ grid-template-areas:
             }
         .casual{
             animation: casualChange 4s infinite;
-            font-size: 24px;
+            font-size: 45px;
             color: #E1F8EB;
         }
             @keyframes casualChange {
@@ -397,7 +405,7 @@ grid-template-areas:
             }
         .cursive{
             animation: cursiveChange 4s infinite;
-            font-size: 24px;
+            font-size: 45px;
             color: #E1F8EB;
         }
             @keyframes cursiveChange {
@@ -424,7 +432,7 @@ grid-template-areas:
         cursor: pointer;
         padding: 20px 20px;
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 35px;
         font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0;
     grid-area: o;
     background-color: #E1F8EB;
@@ -531,6 +539,8 @@ display:grid;
 footer{
     background-color: #4C5BA9;
     color: #E1F8EB;
+    padding:15px;
+    padding-left: 45px;
 }
 
 
