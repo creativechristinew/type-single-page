@@ -1,2 +1,4 @@
 # type-single-page
- 
+ For this project, I was tasked with creating a single page website for a varible font of my choice in the format of a type speciman. The font that I chose is called Recursive, a varible font that has 5 axes, which allows it be very versitile. In my design, I wanted to show the font's insparation from sign painting and therfore went with a bold and colorful design. I chose blue and green, since I do not normally use those colors together and I wanted to challenge myself
+
+This website was the most complicated project so far, since it had multiple elements and required the use of CSS grids. Since I had a more complicated layout, every section had to have it's own CSS grid within the larger grid, and it was challenging to keep track of. In the future, I plan on writing down all of my classes, ids, and grid area letters so that I know that I am using the right words and to prevent repeat letters for the grid. Overall, this assignment was a good challenge and I learned a lot about code organization, CSS grids, and a great deal about debugging the code.
